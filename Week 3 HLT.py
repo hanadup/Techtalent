@@ -1,36 +1,38 @@
 #Task 1
-print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
+print("Welcome to Burgerriaaa!")
+size = input("What burger do you want? beef, chicken, or lamb ").lower()
+lettuce = input("Do you want lettuce? Y or N ")
+cheese = input("Do you want cheese? Y or N ")
 bill = 0
 
-if size == "S":
-    bill += 15
-    if add_pepperoni == "Y":
-        bill += 2
-    elif extra_cheese == "Y":
+if size == "beef":
+    bill += 4
+    if lettuce == "Y":
+        bill += 1
+    elif cheese == "Y":
         bill += 1
     else:
         bill += 0
-elif size == "M":
-    bill += 20
-    if add_pepperoni == "Y":
-        bill += 3
-    elif extra_cheese == "Y":
+elif size == "chicken":
+    bill += 5
+    if lettuce == "Y":
+        bill += 1
+    elif cheese == "Y":
+        bill += 1
+    else:
+        bill += 0
+elif size == "lamb":
+    bill += 6
+    if lettuce == "Y":
+        bill += 1
+    elif cheese == "Y":
         bill += 1
     else:
         bill += 0
 else:
-    bill += 25
-    if add_pepperoni == "Y":
-        bill += 3
-    elif extra_cheese == "Y":
-        bill += 1
-    else:
-         bill += 0
-
-print(f"your final bill £{bill}. ")
+    print("Invalid option, try again")
+    
+print(f"your final bill £{bill}. Please take a seat over there your order will be ready in 10 minutes. Thank you!! ")
 
 #Task 2
 print ("Welcome to the depreciation calculator ")
