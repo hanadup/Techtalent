@@ -33,7 +33,19 @@ else:
 print(f"your final bill £{bill}. ")
 
 #Task 2
+print ("Welcome to the depreciation calculator ")
+Bike_price = 2000
+age = int(input("How many years has it been since the bike was purchased? "))
 
+def bike_loss():
+    depreciation = Bike_price - (age * 200)
+    while depreciation > 1000:
+        if depreciation > 1000:
+            depreciation -= 200
+            print(str(depreciation))
+        else:
+            print(str(depreciation))
+bike_loss()
 
 
 #Task 3
