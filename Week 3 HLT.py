@@ -33,3 +33,25 @@ else:
 print(f"your final bill £{bill}. ")
 
 #Task 2
+
+
+
+#Task 3
+
+number1 = int(input("Pick a number? "))
+number2 = int(input("Pick a second number? "))
+operation = input("Select a operation (plus, minus, times or divide)? ")
+
+def operation1():
+    if operation == "plus":
+        print(number1 + number2)
+    elif operation == "minus":
+        print(number1 - number2)
+    elif operation == "times":
+        print(number1 * number2)
+    elif operation == "divide":
+        print(number1 / number2)
+    else:
+        print("Invalid input, please try again")
+
+operation1()
