@@ -21,3 +21,23 @@ def mark_grade():
         print("Please try again score inputted was incorrect.")
 
 mark_grade()
+
+#numpy Task 1
+
+import numpy as np
+
+array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+print(array)
+
+#numpy Task 2
+
+array = np.ones((3, 3, 3))
+
+print(array)
+
+#numpy Task 3
+
+array = np.arange(10)
+odd = (array[array%2==1])
+print(odd)
