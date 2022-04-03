@@ -32,12 +32,31 @@ print(array)
 
 #numpy Task 2
 
+import numpy as np
 array = np.ones((3, 3, 3))
 
 print(array)
 
 #numpy Task 3
 
+import numpy as np
 array = np.arange(10)
-odd = (array[array%2==1])
-print(odd)
+print(array[1::2])
+
+#numpy Task 4
+
+import numpy as np
+array = np.arange(10)
+array[1::2] = -1
+print(array)
+
+#numpy Task 5
+
+import numpy as np
+array = np.arange(8)
+a = np.reshape(array,(2,4))
+print(a)
+
+#numpy Task 6
+
+
