@@ -18,3 +18,15 @@ elif number == str(8):
     print("What did zer say to eight? Nice belt")
 else:
     print("What is odd? Every alternate number!")
+
+#Task 3
+
+starter = input(("What is you favourite starter? "))
+main_course = input(("What is you favourite main course? "))
+dessert = input(("What is you favourite dessert? "))
+drink = input(("What is you favourite drink? "))
+
+print(f'Your favourite meal is {starter}, {main_course}, {dessert} and with a glass of {drink}.')
+
+#Task 4
+
