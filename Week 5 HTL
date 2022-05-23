@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+holiday = pd.read_csv(r"C:\Users\hanad\Desktop\Coding\Data Academy (Tech talent)\holiday_1.csv")
+df = pd.DataFrame(holiday)
+print(holiday.shape)
+print(holiday.iloc[3:8])
+
+print(holiday['No of inclusive hotels'].mean())
+print(holiday.min())
+print(holiday.max())
+print(holiday[holiday['No of inclusive hotels']>=9])
+print(holiday[holiday['Feedback']>=9])
+holiday.groupby('Feedback' and 'Destination').plot.bar(x='Feedback', )
+
+X = 'Destination'
+Y = 'Feedback'
+plt.bar(X, Y, color='g')
+plt.title("Rankings")
+plt.xlabel("Destination")
+plt.ylabel("Feedback")
+plt.show()
