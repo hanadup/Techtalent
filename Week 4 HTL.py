@@ -59,4 +59,10 @@ print(a)
 
 #numpy Task 6
 
+a = np.arrange(1, 5).reshape(2,2)
+b = np.arrange(6, 10).reshape(2,2)
+c = np.dot(a, b)
+print(c)
+d = np.sum(c, axis = 1)
+print(d)
 
