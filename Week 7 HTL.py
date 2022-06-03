@@ -1,3 +1,12 @@
+K-Means clustering
+
+K-means clustering is an unsupervised machine learning algorithm. In K-means data objects are separated into groups/clusters which closely align with other data objects in the same group and not from other groups/clusters. A number of centroids are assigned to the data which corresponds to the amount groups or clusters the operator has chosen. The distance between the centroids and each data objects are calculated, and the data objects are assigned to the nearest centroid, the mean position of each data objects assigned to the centroid is calculated and this is used to update the centroid position and this process keeps going until the centroid position doesn’t update anymore and the centroids are in their final position. 
+This algorithm would be useful for customer segmentation to group customers into different groups to identify customers which are suited for the marketing a certain new products from a large amount of unlabelled customer data that are more likely to buy the new product.
+This algorithm is widely used in banks to detect fraudulent transactions from previous data of their customers (i.e. purchase habits, transaction amount, purchase frequency and etc) if an anomaly purchase is detected and is not similar to past purchases verification from the customers is requested to ensure that the purchase is genuine by that customer otherwise the purchase will not go through and will be rejected by the bank, also the credit/debit card may be frozen until further notice.
+
+
+Optional HLT
+
 from ast import increment_lineno
 import pandas as pd
 import numpy as np
